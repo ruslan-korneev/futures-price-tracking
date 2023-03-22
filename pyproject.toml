@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "guess-ethusdt"
+name = "futures-tracking"
 version = "0.1.0"
 description = ""
 authors = ["Ruslan <shaggybackend@gmail.com>"]
