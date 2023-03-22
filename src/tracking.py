@@ -53,7 +53,7 @@ class Tracker:
 
             tracked_price_change = (tracked_price_last_hour / tracked_price) - 1
             logger.debug(f"[Debug information] Changes: {tracked_price_change * 100:.2f}%")
-            if abs(tracked_price_change) >= 0.001:
+            if abs(tracked_price_change) >= settings.CHANGES_PERCENT:
                 logger.info(f"Changes: {tracked_price_change * 100:.2f}%")
 
             exclude_influence = tracked_price_change
